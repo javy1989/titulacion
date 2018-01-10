@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>MesaAndFood</title>
+        <meta name="description" content=""/>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i" rel="stylesheet"/>
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/skills/progressbar.css"/>
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/skills/style.css"/>
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/fonticons.css"/>
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/font-awesome.min.cs"/>
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/bootstrap.min.css"/>
+        <h:outputStylesheet library="css" name="jquery-ui.css"/>
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/teamslide.css"/>
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/plugins.css"/>
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/style.css"/>
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/responsive.css"/>
+
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <ui:insert name="head">
+
+        </ui:insert>
+    </h:head>
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <ui:insert name="content">
+        </ui:insert>
+        <ui:include src="footer.xhtml"/>
+
+
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/vendor/jquery-ui.js"></script>
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/vendor/bootstrap.min.js"></script>
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/jquery.easypiechart.min.js"></script>
+
+        <!-- AdminLTE App -->
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/jquery.mixitup.min.js"></script>
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/jquery.easing.1.3.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/css/skills/inview.min.js"></script>
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/css/skills/progressbar.js"></script>
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/css/skills/main.js"></script>
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/plugins.js"></script>
+        <script src="#{facesContext.externalContext.requestContextPath}/resources/js/main.js"></script>
+
+        <ui:insert name="script">
+
+        </ui:insert>
+    </body>
+</html>
+
+

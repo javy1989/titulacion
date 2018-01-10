@@ -1,0 +1,70 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:b="http://bootsfaces.net/ui"
+                xmlns:o="http://omnifaces.org/ui">
+
+    <header id="main_menu" class="header navbar-fixed-top">            
+        <div class="main_menu_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="nave_menu">
+                        <nav class="navbar navbar-default" id="navmenu">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#home">
+                                        <o:graphicImage library="images" name="logo.png"/>
+                                    </a>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                    <h:form id="form" class="form-inline">
+
+                                        <div class="form-group">
+                                            <b:datepicker mode="icon-popup"/>
+                                        </div>  
+                                        <div class="form-group">
+                                            <b:selectOneMenu>
+                                                <f:selectItem itemLabel="1 Persona"/>
+                                                <f:selectItem itemLabel="2 Personas"/>
+                                                <f:selectItem itemLabel="3 Personas"/>
+                                            </b:selectOneMenu>
+                                        </div>
+                                        <div class="form-group">
+                                            <b:selectOneMenu>
+                                                <f:selectItem itemLabel="10:00"/>
+                                                <f:selectItem itemLabel="11:00"/>
+                                                <f:selectItem itemLabel="12:00"/>
+                                            </b:selectOneMenu>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <b:inputText/>
+                                        </div>
+                                        <div class="form-group">
+                                            <b:commandButton value="Buscar" look="success"/>
+                                        </div>
+
+                                    </h:form>
+                                </div>
+
+                            </div>
+                        </nav>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </header> <!--End of header -->
+</ui:composition>
+
